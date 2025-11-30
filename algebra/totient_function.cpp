@@ -86,3 +86,5 @@ vec totient_range_euler(int n) {
 }
 
 
+
+// 1 3 6 9 aK = 0 \dots n-1 (mod n)

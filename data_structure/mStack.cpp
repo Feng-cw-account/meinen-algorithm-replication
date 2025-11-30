@@ -1,6 +1,8 @@
 #include <stack>
 #include <utility>
 #include <algorithm>
+#include <iostream>
+#include <memory>
 
 template<typename T>
 using mStack = std::stack<std::pair<T, T>>;
@@ -43,9 +45,3 @@ void MaxStack::pop() {
     self.pop();
 }
 
-int main() {
-    MaxStack stack();
-    stack
-
-    return 0;
-}
