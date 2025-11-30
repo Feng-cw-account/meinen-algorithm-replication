@@ -84,3 +84,5 @@ vec totient_range_euler(int n) {
 
     return result;
 }
+
+
