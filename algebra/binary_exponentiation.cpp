@@ -41,4 +41,5 @@ int main() {
     int result = power(base, exponent, identity, multiplyOp);
     std::cout << base << " raised to the power of " << exponent << " is " << result << std::endl;
     return 0;
+   
 }
