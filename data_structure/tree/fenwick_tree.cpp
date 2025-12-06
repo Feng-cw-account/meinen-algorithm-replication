@@ -16,7 +16,7 @@ private:
     }
 
 public:
-    // Constructor 1: Initializes an empty Fenwick tree of a given size
+    // Cons5tructor 1: Initializes an empty Fenwick tree of a given size
     FenwickTree(int size) : n(size) {
         tree.assign(n + 1, T{}); // Initialize with default value of T (e.g., 0 for numeric types)
     }
