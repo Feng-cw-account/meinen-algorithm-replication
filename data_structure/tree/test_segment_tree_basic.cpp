@@ -8,17 +8,17 @@ int main(){
     SegmentTree<int> seg(a);
     assert(seg.query(0,0) == 1);
     assert(seg.query(0,1) == 3);
-    assert(seg.query(1,3) == 9);
+    assert(seg.query(1,3) == 2+3+4);
     assert(seg.query(0,4) == 15);
 
     seg.set(2, 10); // set a[2]=10
     assert(seg.get(2) == 10);
-    assert(seg.query(0,4) == 22);
+    assert(seg.query(0,4) == 1+2+10+4+5);
 
     seg.add(2, 5); // a[2]+=5 -> 15
     assert(seg.get(2) == 15);
-    assert(seg.query(0,4) == 27);
+    assert(seg.query(0,4) == 1+2+15+4+5);
 
-    cout << "SegmentTree tests passed" << endl;
+    cout << "SegmentTree basic tests passed" << endl;
     return 0;
 }

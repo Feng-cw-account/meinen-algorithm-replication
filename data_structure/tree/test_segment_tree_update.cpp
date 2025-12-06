@@ -12,7 +12,7 @@ int main() {
     assert(seg.get(2) == 8);
     assert(seg.query(0,4) == 1+2+8+4+5);
 
-    // Test 2: max merge
+    // Test 2: max merge using std::function
     vec<int> b = {5,1,3,2,4};
     SegmentTree<int> segmax(b, [](const int &x, const int &y){ return x > y ? x : y; }, numeric_limits<int>::min());
     assert(segmax.query(0,4) == 5);
@@ -20,6 +20,6 @@ int main() {
     assert(segmax.get(4) == 10);
     assert(segmax.query(0,4) == 10);
 
-    cout << "SegmentTree generic update tests passed" << endl;
+    cout << "SegmentTree update tests passed" << endl;
     return 0;
 }
